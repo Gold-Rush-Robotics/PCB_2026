@@ -44,9 +44,8 @@ fp-info-cache
 # Force Git to track Gerber files and JLC PCB manufacturing packages
 !*.gbr
 !*.gbrjob
-!/fabrication_output/**/*.zip
-!/jlcpcb/production_files/**/*.zip
+!/FAB/**/*.zip
 
 # Ensure manual documentation folders are always tracked
-!/documentation/**
-!/datasheets/**
+!/DOCUMENTATION/**
+!/DATASHEETS/**
