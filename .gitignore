@@ -29,10 +29,6 @@ fp-info-cache
 *.dsn
 *.ses
 
-# Exported BOM files
-*.xml
-*.csv
-
 # Archived Backups (KiCad 6.0)
 **/*-backups/*.zip
 
@@ -41,3 +37,16 @@ fp-info-cache
 
 # Local project settings
 *.kicad_prl
+
+# ==========================================
+# CUSTOM MANUFACTURING OVERRIDES
+# ==========================================
+# Force Git to track Gerber files and JLC PCB manufacturing packages
+!*.gbr
+!*.gbrjob
+!/fabrication_output/**/*.zip
+!/jlcpcb/production_files/**/*.zip
+
+# Ensure manual documentation folders are always tracked
+!/documentation/**
+!/datasheets/**
